@@ -17,7 +17,7 @@ public class GreatCircle {
         double y2rad = Math.toRadians(y2);
 
         double r = 6371.0;
-        double det = Math.sqrt( Math.pow(Math.sin((x2rad - x1rad) / 2), 2) + Math.cos(x1rad) * Math.cos(x2rad) * Math.pow(Math.sin((y2rad - y1rad) / 2), 2) );
+        double det = Math.sqrt(Math.pow(Math.sin((x2rad - x1rad) / 2), 2) + Math.cos(x1rad) * Math.cos(x2rad) * Math.pow(Math.sin((y2rad - y1rad) / 2), 2));
         double distance = 2 * r * Math.asin(det);
 
         System.out.println(distance + " kilometers");

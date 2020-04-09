@@ -16,9 +16,9 @@ public class CMYKtoRGB {
 
         double white = 1 - k;
 
-        int red = (int) (255 * white * (1 - c));
-        int green = (int) (255 * white * (1 - m));
-        int blue = (int) (255 * white * (1 - y));
+        int red = (int) Math.round(255 * white * (1 - c));
+        int green = (int) Math.round(255 * white * (1 - m));
+        int blue = (int) Math.round(255 * white * (1 - y));
 
         System.out.println("red   = " + red);
         System.out.println("green = " + green);
