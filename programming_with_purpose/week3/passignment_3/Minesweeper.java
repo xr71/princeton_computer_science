@@ -18,9 +18,9 @@ public class Minesweeper {
             int rm = (int) (Math.random() * m);
             int rn = (int) (Math.random() * n);
 
-            System.out.println(rm + " " + rn);
+            // System.out.println(rm + " " + rn);
 
-            if (minesLand[rm[rn] == 0) {
+            if (minesLand[rm][rn] == 0) {
                 minesLand[rm][rn] = 1;
                 numMines++;
             } else {
