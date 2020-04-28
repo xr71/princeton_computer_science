@@ -29,17 +29,23 @@ public class Minesweeper {
 
         }
 
-        int numcheck = 0;
+        int numCheck = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
+
+                int upperLeft = 0;
+                int upperRight = 0;
+                int lowerRight = 0;
+                int lowerLeft = 0;
+
                 System.out.print(minesLand[i][j] + "  ");
-                numcheck = numcheck + minesLand[i][j];
+                numCheck = numCheck + minesLand[i][j];
             }
 
             System.out.println();
         }
 
         System.out.println();
-        System.out.println(numcheck);
+        System.out.println(numCheck);
     }
 }
